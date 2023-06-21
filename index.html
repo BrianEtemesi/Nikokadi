@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!--BOOTSTRAP CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Welcome to Cheza Kadi</title>
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- Some default padding for the sections -->
+    <style>
+        section {
+            padding: 60px 0;
+        }
+    </style>
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!--  Main Container -->
+            <div class="container-fluid">
+                <a href="#intro" class="navbar-brand">
+
+                    <!-- Icon & Title -->
+                    <span class="fw-bold text-secondary">
+                        <img id="background-img" src="assets/Playing_cards/svg/dark-ACE.svg" alt="Ace of Clubs" width="30" height="24" class="d-inline-block align-text-top">
+                        NIKO KADI
+                        
+                    </span>
+                </a>
+
+                <!-- Toggle for mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Nav Bar Links -->
+                <div id="main-nav" class="collapse navbar-collapse justify-content-end">
+
+                    <ul class="nav nav-pills">
+                        <li class="navbar-item">
+                            <a href="#" class="nav-link" >Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">Game Lobby</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-item">Play with a Friend</a></li>
+                                <li><a href="#" class="dropdown-item">Enter Tournament</a></li>
+                                <li><a href="#" class="dropdown-item">League of Legends</a></li>
+                                <li><a href="#" class="dropdown-item">Play Against Comp</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">Account</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-item"></a></li>
+                                <li><a href="#" class="dropdown-item">My Profile</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a href="#" class="dropdown-item">Add Money</a></li>
+                                <li><a href="#" class="dropdown-item">Deposit Money</a></li>
+                                <li><a href="#" class="dropdown-item">Witdraw Money</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a href="#" class="dropdown-item">Logout</a></li>
+
+                                <li></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">Stats</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-item"></a></li>
+                                <li><a href="#" class="dropdown-item">Game History</a></li>
+                                <li><a href="#" class="dropdown-item">Joined Tournaments</a></li>
+                                <li></li>
+                            </ul>
+                        </li>
+
+
+                    <li class="navbar-item">
+                            <a href="#" class="nav-link active" aria-current="page">Support</a>
+                        </li>
+
+                        <li class="navbar-item">
+                            <a href="#inbox" class="nav-link">
+                                <i class="bi bi-envelope"></i>
+                            </a>
+                        </li> 
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+        <!-- Main Image & Intro Text -->
+        <section class="intro">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <div class="text-end">
+                            <span>
+                                <p class="lead fw-bold">No of Online Players: 10</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- Account Balance -->
+        <section id="account_balance">
+            <div class="container-fluid">
+
+                <div class="text-center">
+                    <h2>Account Balance</h2>
+                    <p class="lead">Take a peek at your Account Balance</p>
+                </div>
+
+                <div id="balance1" class="accordion">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                        aria-controls="#chapter-1">
+                            <span class="text-center">Deposits and Withdrawals</span>
+
+                        </button>
+                    </h2>
+                
+                    <!-- Content -->
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="Account Balance" data-bs-parent="balance1">
+                        <div class="accordionbody">
+                            <!-- FORM HEADER-->
+                            <div class="text-center mt-3">
+                            <h3>Remaining Balance: KSH 1,000</h3>
+                            </div>
+
+                            <!-- Form inside a grid to control how much it expands -->
+                            <div class="row justify-content-center my-5">
+                                <div class="col-lg-6">
+                                        <!-- FORM HEADER-->
+                                        <div class="text-left">
+                                            <!-- <h3>Remaining Balance: KSH 1,000</h3> -->
+                                            <h4 class="display"> Would you like to deposit money? </h4>
+                                            <p class="lead">Using this option, you will receive a prompt on your phone. Once you do, Enter Your
+                                                MPESA Pin to complete your transaction
+                                            <p>
+                                        </div>
+
+                                    <!-- FORM -->
+                                    <form action="">
+
+                                        <label for="amount" class="form-label">Enter Amount</label>
+                                        <div class="mb-4 input-group">
+                                            <span class="input-group-text">
+                                                <i class="bi bi-coin"></i>
+                                            </span>
+
+                                            <input type="number" onkeydown="return false;" class="form-control" id="amount" placeholder="Min: KES 5/=">
+                                        </div>
+
+
+                                        <label for="phone" class="form-label">Enter your phone number:</label>
+                                        <div class="mb-4 input-group">
+                                            <span class="input-group-text">
+                                                <i class="bi bi-telephone-fill"></i>
+                                            </span>
+
+                                            <input type="phone" class="form-control" id="phone" placeholder="Eg: 07123456">
+                                        </div>
+
+                                        <div class="row justify-content-center align-items-center">
+                                            <div class="mb-4 text-center col-lg-6 col-md-4 col-sm-4">
+                                                <button class="btn btn-secondary">Deposit</button>
+                                            </div>
+
+                                            <div class="mb-4 text-center col-lg-6 col-md-4 col-sm-4">
+                                                <button class="btn btn-secondary">Widthdraw</button>
+                                            </div>
+                                        </div>
+                                    </form>
+
+
+
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div id="card-mpesa" class="card border-3">
+
+                                        <div id="card-mpesa-header" class="card-header text-center text-white fw-bold">
+                                            <h4>Deposit Money Using MPESA PAYBILL</h4>
+                                        </div>
+
+                                        <div id="card-deposit-card" class="card-body text-center-py-5">
+                                            <ol class="p-3">
+                                                <li> Go to M-Pesa Menu on your mobile phone </li>
+                                                <li> Select Lipa MPESA </li>
+                                                <li> Select PayBill</li>
+                                                <li> Paybill No or Business No: 123445</li>
+                                                <li> Enter NAME as the Account Number </li>
+                                                <li> Enter Amount: Min KESH 10/=</li>
+                                                <li> Enter Your MPESA Pin </li>
+                                                <li> Wait for confirmation Message </li>
+                                            </ol>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+        
+        <!-- Game Section-->
+        <section id="game-section">
+
+            <div class="container-fluid">
+                <div class="text-center">
+                    <h2>Time To Play</h2>
+                    <p class="lead text-muted">Choose a game</p>
+                    <hr></hr>
+                </div>
+            </div>
+
+            <div class="row align-items-center justify-content-center">
+
+                <div class="col-8 col-lg-4 col-xl-3">
+                    <div class="card border-1">
+                        <div id="game-card-header" class="card-header text-center text-white fw-bold">
+                            <h4>Cash Games</h4>
+                        </div>
+                        <div id="cash-games" class="card-body text-center py-5">
+                            <p class="lead card-text mx-2 text-muted">Whether you're a seasoned player or just starting out, the Cash Games section is designed to offer an exciting 
+                                and engaging experience. So if you're feeling lucky, come and try your luck with a small bid and see if you can hit it big!
+                            </p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#joker-modal">Play</button>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-8 col-lg-4 col-xl-3">
+                    <div class="card border-1">
+                        <div id="game-card-header" class="card-header text-center text-primary" fw-bold>
+                            <h4>Tournament</h4>
+                        </div>
+                        <div class="card-body text-center py-5">
+                            <p class="lead card-text mx-2 text-muted">
+                            The Tournament section is the perfect place for competitive players looking to showcase their skills. 
+                            Players can join different tournaments, compete with others, and win prizes. You can bid as low as KES. 5/=. Lorem, ipsum.     
+                            </p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#joker-modal">Play</button>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-8 col-lg-4 col-xl-3">
+                    <div class="card border-1">
+                        <div id="game-card-header" class="card-header text-center text-white" fw-bold>
+                            <h4>Leagues</h4>
+                        </div>
+                        <div class="card-body text-center py-5">
+                            <p class="lead card-text mx-2 text-muted">
+                                The League section is where players can compete against each other for an extended period. 
+                                Players can form teams, and the teams can compete in a league format where they accumulate points over a game season.                            
+                            </p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#joker-modal">Play</button>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Container for the Modal-->            
+        <!-- Joker Modal -->
+        <div class="container-fluid">
+            <div class="modal fade" id="joker-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+
+                <div class="modal-dialog modal-dialog-scrollable align-items-center justify-content-center modal-dialog-centered modal-lg modal-md modal-sm">
+                    <div class="modal-content">
+                        <!-- Header for the modal -->
+                        <div class="modal-header text-center">
+                            <h5 class="modal-title" id="modal-title" style="width: 80%">Play with or without Joker</h5>
+                            <button type="button" class="btn-close" style="width: 20%" data-bs-dismiss="modal" aria-label="close"></button>
+                        </div>
+
+                        <!-- Modal Body-->
+                        <div class="modal-body modal-lg modal-sm dev_modal-body">
+                            <div class="row align-items-center justify-content-center g-3">
+
+                                <div class="col-lg-4 col-md-10 col-sm-12">
+                                    <div class="card border-1 dev_modal-card">
+                                        <img src="assets/resized/joker.png" alt="golden_joker">
+                                        <!-- Overlay -->
+                                        <div class="overlay position-absolute w-100 h-100 d-flex justify-content-center align-items-top p-3">
+                                            <div class="text-white text-start">
+                                                <h5>Rules for Playing with Joker</h5>
+                                                <ul>
+                                                    <li>Each Joker will make your opponent pick 5 cards only</li>
+                                                    <li>Joker can be blocked by Ace</li>
+                                                    <li>Both Jokers can cancel a special request by Ace</li>
+                                                    <li>A Joker followed by Bomb will have no effect. Only the bomb will apply</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-header text-center text-white dev_modal-header">
+                                            <a href="#game-section" class="btn btn-outline-primary btn-lg dev_modal-button">Play with Joker</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-lg-4 col-md-10 col-sm-12">
+                                    <div class="card border-1 dev_modal-card my-3">
+                                        <img src="assets/resized/no-joker.png" alt="golden_joker">
+                                        <!-- Overlay -->
+                                        <div class="overlay position-absolute w-100 h-100 d-flex justify-content-center align-items-top p-3">
+                                            <div class="text-white text-start">
+                                                <h5>Rules for Playing without Joker</h5>
+                                                <ul>
+                                                    <li>Each Joker will make your opponent pick 5 cards only</li>
+                                                    <li>Joker can be blocked by Ace</li>
+                                                    <li>Both Jokers can cancel a special request by Ace</li>
+                                                    <li>A Joker followed by Bomb will have no effect. Only the bomb will apply</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-header text-center text-white dev_modal-header fw-bold">
+                                            <a href="#game-section" class="btn btn-outline-primary btn-lg btn-md dev_modal-button">Play without Joker</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-10 col-sm-12">
+                                    <div class="card border-1 dev_modal-card my-3">
+                                        <img src="assets/resized/accumulation.png" alt="golden_joker">
+                                        <!-- Overlay -->
+                                        <div class="overlay position-absolute w-100 h-100 d-flex justify-content-center align-items-top p-3">
+                                            <div class="text-white text-start">
+                                                <h5>Accumulation Rules</h5>
+                                                <ul>
+                                                    <li>Red Joker will make Opponent pick 10 cards</li>
+                                                    <li>Black Joker will make Opponent pick 5 cards</li>
+                                                    <li>Both Jokers total to 15 cards</li>
+                                                    <li>Joker on top of a bomb will require the opponent to accumulate cards</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card-header text-center text-white  dev_modal-header fw-bold">
+                                            <a href="#game-section" class="btn btn-outline-primary btn-lg btn-md dev_modal-button">Accumulation</a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--BOOTSTRAP CDN-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+        <script src="js/main.js"></script>
+
+        <!-- 
+            Creadits 
+            Icons 
+            <a href="https://www.flaticon.com/free-icons/ace-of-clubs" title="ace of clubs icons">Ace of clubs icons created by Roundicons Premium - Flaticon</a>
+        -->
+
+
+    
+
+    </body>
+</html>

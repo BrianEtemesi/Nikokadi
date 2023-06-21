@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/table.css">
+
+    <!--BOOTSTRAP CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>It's Time to Play</title>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- Some default padding for the sections -->
+    <style>
+        section {
+            padding: 60px 0;
+        }
+    </style>
+</head>
+<body>
+            <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!--  Main Container -->
+            <div class="container-fluid">
+                <a href="#intro" class="navbar-brand">
+
+                    <!-- Icon & Title -->
+                    <span class="fw-bold text-secondary">
+                        <img id="background-img" src="assets/Playing_cards/svg/dark-ACE.svg" alt="Ace of Clubs" width="30" height="24" class="d-inline-block align-text-top">
+                        SHOW TIME 
+                        
+                    </span>
+                </a>
+
+                <!-- Toggle for mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Nav Bar Links -->
+                <div id="main-nav" class="collapse navbar-collapse justify-content-end">
+
+                    <ul class="nav nav-pills">
+                        <li class="navbar-item">
+                            <a href="#" class="nav-link" >Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">Game Lobby</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-item">Play with a Friend</a></li>
+                                <li><a href="#" class="dropdown-item">Enter Tournament</a></li>
+                                <li><a href="#" class="dropdown-item">League of Legends</a></li>
+                                <li><a href="#" class="dropdown-item">Play Against Comp</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">Account</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-item"></a></li>
+                                <li><a href="#" class="dropdown-item">My Profile</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a href="#" class="dropdown-item">Add Money</a></li>
+                                <li><a href="#" class="dropdown-item">Deposit Money</a></li>
+                                <li><a href="#" class="dropdown-item">Witdraw Money</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a href="#" class="dropdown-item">Logout</a></li>
+
+                                <li></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">Stats</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-item"></a></li>
+                                <li><a href="#" class="dropdown-item">Game History</a></li>
+                                <li><a href="#" class="dropdown-item">Joined Tournaments</a></li>
+                                <li></li>
+                            </ul>
+                        </li>
+
+
+                    <li class="navbar-item">
+                            <a href="#" class="nav-link" aria-current="page">Support</a>
+                        </li>
+
+                        <li class="navbar-item">
+                            <a href="#inbox" class="nav-link">
+                                <i class="bi bi-envelope"></i>
+                            </a>
+                        </li> 
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav> 
+        <div class="container-fluid main-container" id="main-container">
+
+            <!-- Player 1-->
+            <div class="container-fluid player-container player-1" id="player-1-container">
+
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-6 col-lg-5 col-md-5 col-sm-6" id="player-1-card">
+                        <!-- Player Section -->
+                        <div class="card">
+                            
+                            <div class="card-header p-2">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-4 col-md-4 col-sm-3">
+                                        <button class="btn btn-outline-secondary">
+                                            <i class="bi bi-person-circle"></i>
+                                        </button>
+                                    </div>
+                                    
+                                    <div class="col-lg-6 col-md-6 col-sm-7">
+                                        <p class="lead dev_card-player-name">Brian Etemesi</p>
+                                    </div>
+
+                                    <div class="col-lg-2 col-md-2 col-sm-2">
+                                        <button class="btn btn-outline-secondary btn-controls" id="player1-btn-controls" data-bs-toggle="tooltip" data-bs-placement="top" title="Show Controls">
+                                            <i class="bi bi-chevron-bar-up controls-icon"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-body border-2 border-primary controls-body" id="controls-body-1">
+
+                                <!-- Controls -->
+                                <div class="row justify-content-center dev_controls-row" id="player1-controls-container">
+                                    <div class="col-3">
+                                        <button class="btn btn-outline-secondary" data-bs-toogle="tootlip" data-bs-placement="top" title="Video">
+                                            <i class="bi bi-camera-video-fill"></i>
+                                        </button>
+                                    </div>
+
+                                    <div class="col-3">
+                                        <button class="btn btn-outline-secondary">
+                                            <i class="bi bi-mic-fill"></i>
+                                        </button>
+                                    </div>
+
+                                    <div class="col-4">
+                                        <button class="button btn btn-outline-secondary timer-button" id="player1-timerButton-1">
+                                            <span id="timerValue">00:00</span>
+                                        </button>
+                                    </div>
+
+                                    <div class="col-2">
+                                        <button class="btn btn-outline-secondary">
+                                            <i class="bi bi-three-dots"></i>
+                                        </button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Deck -->
+                <div class="row justify-content-center">
+                    <div class="deck col-6 col-lg-4 col-md-5 col-sm-6">
+                        <!-- Cards go here -->
+                    </div>
+                </div>
+                
+
+
+            </div>
+
+
+            <!-- Table -->
+            <div class="container-fluid table">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-3 playing-pile" style="width: 90px;">
+                        <div class="card-body">
+                            <h5 class="card-title">Pick</h5>
+                            <a href="#" class="btn btn-primary">Shuffle</a>
+                        </div>
+                    </div>
+                    <div class="col-4 pile-container community-container" style="width: 90px;"></div>
+                </div>
+
+            </div>
+            
+            <!-- Player 2-->
+            <div class="container-fluid player-container player-2" id="player-2-container">
+
+                <!-- Deck -->
+                <div class="row justify-content-center">
+                    <div class="deck col-6" id="player2-deck">
+                        <!-- Cards go here -->
+                    </div>
+                </div>
+                
+
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-6 col-lg-8 col-md-8 col-sm-8" id="player-2-card">
+                        <!-- Player Section -->
+                        <div class="card">
+                            
+                            <div class="card-header p-2">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-2 col-md-2 col-sm-2">
+                                        <button class="btn btn-outline-secondary">
+                                            <i class="bi bi-person-circle"></i>
+                                        </button>
+                                    </div>
+                                    
+                                    <div class="col-lg-6 col-md-6 col-sm-6 text-center">
+                                        <p class="lead dev_card-player-name">Oduor Otieno</p>
+                                    </div>
+
+                                    <div class="col-lg-2 col-md-2 col-sm-2">
+                                        <button class="btn btn-outline-secondary kadi-btn">
+                                            KADI
+                                        </button>
+                                    </div>
+
+                                    <div class="col-lg-2 col-md-2 col-sm-2">
+                                        <button class="btn btn-outline-secondary btn-controls" id="player2-btn-controls" data-bs-toggle="tooltip" data-bs-placement="top" title="Show Controls">
+                                            <i class="bi bi-chevron-bar-up controls-icon" id="player2-icon"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-body border-2 border-primary" id="player2-controls-body">
+
+                                <!-- Controls -->
+                                <div class="row justify-content-center dev_controls-row" id="player2-controls-container">
+                                    <div class="col-3">
+                                        <button class="btn btn-outline-secondary" data-bs-toogle="tootlip" data-bs-placement="top" title="Video">
+                                            <i class="bi bi-camera-video-fill"></i>
+                                        </button>
+                                    </div>
+
+                                    <div class="col-3">
+                                        <button class="btn btn-outline-secondary">
+                                            <i class="bi bi-mic-fill"></i>
+                                        </button>
+                                    </div>
+
+                                    <div class="col-4">
+                                        <button class="button btn btn-outline-secondary timerValue" id="player2-timerButton">
+                                            <span id="player2-timerValue">00:00</span>
+                                        </button>
+                                    </div>
+
+                                    <div class="col-2">
+                                        <button class="btn btn-outline-secondary">
+                                            <i class="bi bi-three-dots"></i>
+                                        </button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    <!--BOOTSTRAP CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="js/main.js"></script>
+    <script type="module" src="js/table.js"></script>
+    <!-- <script type="module" src="js/data_table.js"></script> -->
+</body>
+</html>

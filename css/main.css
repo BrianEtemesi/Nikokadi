@@ -1,0 +1,89 @@
+#background-not_img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.intro {
+    background-image: url("../assets/rolled_out_deck.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.intro::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../assets/rolled_out_deck.jpg);
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.5;
+    filter: blur(3px);
+
+}
+
+#game-card-header {
+    background-image: url(../assets/JQK-on-black.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Remove number input arrow */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+ 
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#card-mpesa-header {
+    background-image: url(../assets/GreenGradientBackground.jpeg)
+}
+
+.overlay {
+    background-color: rgba(31, 30, 30, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+.dev_modal-card img {
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+}
+
+.dev_modal-card:hover img {
+    opacity: 0.2;
+}
+
+/* Prevents the header and hence the button from being overlayed */
+.dev_modal-header {
+    z-index: 10;
+}
+
+.dev_modal-body {
+    max-height: 70vh;
+    overflow-y: auto;
+    overflow: visible;
+}
+/* 
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .modal-dialog {
+        max-width: 500px;
+    }
+} */
