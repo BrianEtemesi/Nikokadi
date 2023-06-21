@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    
+    <!--BOOTSTRAP CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+</head>
+<body>
+    <section class="vh-100" style="background-color: #9A616D;" id="loginSection">
+        <style>
+            #loginSection {
+                background-image: url("static/assets/rolled_out_deck.jpg");
+            }
+        </style>
+        <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col col-xl-10">
+                    <div class="card" style="border-radius: 1rem;">
+                        <div class="row g-0">
+                            <div class="col-md-6 col-lg-5 d-none d-md-block">
+                                <img src="{{ url_for('static', filename='assets/heart_in_the_middle.png')}}" alt="cards" class="img-fluid" id="stacked_cards">
+                                <style>
+                                    #stacked_cards {
+                                        height: 100%;
+                                        border-radius: 1rem;
+                                    }
+                                </style>
+                            </div>
+
+                            <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                                <div class="card-body p-4 p-lg-5 text-black">
+                                    <form data-form-type="login" class="needs-validation">
+                                        <div class="d-flex align-items-center mb-3 pb-1">
+                                            <span>
+                                                <img src="{{ url_for('static', filename='assets/playing_cards_icon.png')}}" alt="" class="img-fluid" id="playing_cards_icon">
+                                                <style>
+                                                    #playing_cards_icon {
+                                                        width: 50px;
+                                                        height: 50px;
+                                                        margin-right: 15px;
+                                                    }
+                                                </style>
+                                            </span>
+                                            <span class="h1 fw-bold mb-0">NIKO KADI</span>
+
+                                        </div>
+
+                                        <h5 class="fw-normal mb-3 pb-3">Welcome, Login into your account</h5>
+
+                                        <hr/>
+
+                                        <div class="form-outline mb-4">
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text">
+                                                    <i class="bi bi-person"></i>
+                                                </span>
+                                                <input type="text" class="form-control" id="usernameInput" placeholder="Username/ Phone Number" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-outline mb-4">
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text">
+                                                    <i class="bi bi-key-fill"></i>
+                                                </span>
+
+                                                <input type="password" class="form-control" id="passwordInput" placeholder="Password" required>
+                                                <button type="button" class="btn btn-outline-secondary" id="toggleVisibilityBtn">
+                                                    <i id="visibilityIcon" class="bi bi-eye-fill"></i>
+                                                </button>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="pt-1 mb-4">
+                                            <button type="button" class="btn btn-dark w-100" id="loginBtn">
+                                                Login
+                                            </button>
+                                            <div id="loginFeedback"></div>
+                                        </div>
+
+                                        <a href="#" class="small text-muted">Forgot password?</a>
+
+                                        <p class="mb-2 pb-lg-2">Don't Have an Account?
+                                            <a href="/sign-up" color: 393f81>Sign Up</a>
+                                        </p>
+
+                                        <a href="#" class="small text-muted">Terms of Use</a>
+                                        <a href="#" class="small text-muted">Privacy Policy</a>
+
+
+
+
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>  
+    
+    <script src="{{ url_for('static', filename='/js/login.js')}}"></script>
+
+    <!--BOOTSTRAP CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
