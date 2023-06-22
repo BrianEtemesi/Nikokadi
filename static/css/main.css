@@ -50,7 +50,7 @@ section {
 } */
 
 #game-card-header {
-    background-image: url(../assets/JQK-on-black.png);
+    background-image: url("assets/JQK-on-black.png");
     background-size: cover;
     background-position: center;
 }
@@ -68,7 +68,7 @@ input[type=number] {
 }
 
 #card-mpesa-header {
-    background-image: url(../assets/GreenGradientBackground.jpeg)
+    background-image: url("assets/GreenGradientBackground.jpeg")
 }
 
 .overlay {
