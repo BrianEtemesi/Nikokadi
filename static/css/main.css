@@ -175,7 +175,7 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 30px;
-    background: url(assets/carousel/bg.png) center / cover;
+    background: url("assets/carousel/bg.png") center / cover;
     overflow: hidden;
 }
 
